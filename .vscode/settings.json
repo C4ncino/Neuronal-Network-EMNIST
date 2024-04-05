@@ -1,0 +1,16 @@
+{
+    "cSpell.words": [
+        "tensorflow",
+        "keras",
+        "relu",
+        "softmax",
+        "sparse_categorical_crossentropy",
+        "adam",
+        "xlabel",
+        "ylabel",
+        "argmax",
+        "imshow",
+        "annot",
+        "cmap"
+    ]
+}
