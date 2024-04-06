@@ -64,7 +64,13 @@ def train(x_train: pd.DataFrame, y_train: pd.Series, x_test: pd.DataFrame, y_tes
     )
 
     print("Training...")
-    model_history = model.fit(x_train, y_train, epochs=epochs, validation_data=(x_test, y_test))
+    model_history = model.fit(
+        x_train, 
+        y_train, 
+        epochs=epochs, 
+        batch_size=128,
+        validation_data=(x_test, y_test)
+    )
 
     plt.plot(model_history.history['loss'])
     plt.plot(model_history.history['val_loss'])
