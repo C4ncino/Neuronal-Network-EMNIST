@@ -4,6 +4,7 @@ from matplotlib import pyplot as plt
 import numpy as np
 import seaborn as sns
 import pandas as pd
+from models import path, player
 from models import model_jp, model_cancino, epochs_jp, epochs_cancino
 from class_mapping import classes
 
@@ -158,4 +159,4 @@ def main(model_path: str, player: str) -> None:
 
 
 if __name__ == '__main__':
-    main('models/cancino/v1', 'cancino')
+    main(path, player)
