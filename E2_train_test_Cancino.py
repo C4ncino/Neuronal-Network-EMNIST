@@ -151,7 +151,7 @@ def main(model_path: str, player: str) -> None:
                 model = train(x_train, y_train, x_test, y_test, model_path, player)
 
             else:
-                model = tf.keras.models.load_model(model_path)
+                model = tf.keras.models.load_model(f"{model_path}.h5")
             
             if op != '2':
                 test(model, x_test, y_test)
