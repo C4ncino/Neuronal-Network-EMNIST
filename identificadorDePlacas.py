@@ -47,7 +47,7 @@ def main():
         # plt.imshow(canvas28, cmap='gray')
         # plt.show()
 
-        cv2.imwrite('coche1_imagenes/'+str(i)+'.jpg', canvas28)
+        cv2.imwrite('images/coche1_imagenes/'+str(i)+'.jpg', canvas28)
 
     # FRACCION DE IMAGENES COCHE 2--------------->
     listImage2 = []
@@ -84,7 +84,7 @@ def main():
         # plt.imshow(canvas28, cmap='gray')
         # plt.show()
 
-        cv2.imwrite('coche2_imagenes/'+str(i)+'.jpg', canvas28)
+        cv2.imwrite('images/coche2_imagenes/'+str(i)+'.jpg', canvas28)
 
     # FRACCION DE IMAGENES COCHE 3--------------->
     listImage3 = []
@@ -121,7 +121,7 @@ def main():
         # plt.imshow(canvas28, cmap='gray')
         # plt.show()
 
-        cv2.imwrite('coche3_imagenes/'+str(i)+'.jpg', canvas28)
+        cv2.imwrite('images/coche3_imagenes/'+str(i)+'.jpg', canvas28)
 
 
     # plt.imshow(image1, cmap='gray')
