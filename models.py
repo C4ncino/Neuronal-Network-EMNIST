@@ -25,7 +25,7 @@ model_cancino = tf.keras.Sequential([
 #! -----------------------------------------------------------------------------
 
 epochs_jp = 10
-# V1 loss .4925 accuracy .8388
+# V1 loss .4883 accuracy .8445
 # model_jp = tf.keras.Sequential([
 #     tf.keras.layers.Input(shape=(784,)),
 #     tf.keras.layers.Dense(units = 512, activation="relu"),
@@ -40,7 +40,7 @@ epochs_jp = 10
 #     tf.keras.layers.Dense(units = 47, activation="softmax"),
 # ])
 
-# V2 loss .5056 accuracy .8393
+# V2 loss .4984 accuracy .8353
 # model_jp = tf.keras.Sequential([
 #     tf.keras.layers.Input(shape=(784,)),
 #     tf.keras.layers.Dense(units = 512, activation="relu"),
@@ -55,7 +55,7 @@ epochs_jp = 10
 #     tf.keras.layers.Dense(units = 47, activation="softmax"),
 # ])
 
-# V3 loss .4887 accuracy .8422
+# V3 loss .4896 accuracy .8393
 model_jp = tf.keras.Sequential([
     tf.keras.layers.Input(shape=(784,)),
     tf.keras.layers.Dense(units = 512, activation="relu"),

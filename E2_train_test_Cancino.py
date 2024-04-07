@@ -158,4 +158,4 @@ def main(model_path: str, player: str) -> None:
 
 
 if __name__ == '__main__':
-    main('models/juanpablo/v3', 'juanpablo')
+    main('models/juanpablo/v1', 'juanpablo')

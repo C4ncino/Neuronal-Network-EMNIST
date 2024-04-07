@@ -49,7 +49,7 @@ El dataset que se utiliza es el de EMNIST dividido en 2 archivos .csv. El primer
 ## Historial de versiones juan pablo
 
 ### v1
-### Loss: 0.4925 Accurracy: 0.8388
+### Loss: 0.4883 Accurracy: 0.8445
 
 | Type  | Units | Activation | Dropout |
 | ----- | ----- | ---------- | ------- |
@@ -59,9 +59,10 @@ El dataset que se utiliza es el de EMNIST dividido en 2 archivos .csv. El primer
 | Dense | 256   | relu       | 0.1     |
 | Dense |  64   | relu       | N/A     |
 
+![Graphic_v1]("images/Graphics/JuanPablo/Graphic_v1.png")
 
 ### v2
-### Loss: 0.5056 Accurracy: 0.8393
+### Loss: 0.4984 Accurracy: 0.8353
 
 | Type  | Units | Activation | Dropout |
 | ----- | ----- | ---------- | ------- |
@@ -71,8 +72,10 @@ El dataset que se utiliza es el de EMNIST dividido en 2 archivos .csv. El primer
 | Dense |  64   | relu       | 0.1     |
 | Dense |  32   | relu       | N/A     |
 
+![Graphic_v2]("images/Graphics/JuanPablo/Graphic_v2.png")
+
 ### v3
-### Loss: 0.4887 Accurracy: 0.8422
+### Loss: 0.4896 Accurracy: 0.8393
 
 | Type  | Units | Activation | Dropout |
 | ----- | ----- | ---------- | ------- |
@@ -81,7 +84,9 @@ El dataset que se utiliza es el de EMNIST dividido en 2 archivos .csv. El primer
 | Dense | 512   | relu       | 0.25    |
 | Dense | 128   | relu       | 0.1     |
 | Dense |  32   | relu       | N/A     |
-	
+
+![Graphic_v3]("images/Graphics/JuanPablo/Graphic_v3.png")
+
 ## Pruebas
 
 
