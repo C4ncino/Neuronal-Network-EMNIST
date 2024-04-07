@@ -48,10 +48,13 @@ Epochs: 15
 | Dense | 190   | relu       | 0.2     |
 | Dense | 190   | relu       | 0.2     |
 
-Accuracy: [0.44623908400535583, 0.8504255414009094]
+last epoch 
+loss: 0.4565 - accuracy: 0.8400 - val_loss: 0.4426 - val_accuracy: 0.8502
+
+Accuracy: [0.4425795376300812, 0.8501595854759216]
 
 
-### v4.2
+### v5
 
 Epochs: 15
 
@@ -60,4 +63,7 @@ Epochs: 15
 | Dense | 180   | relu       | 0.15    |
 | Dense | 180   | relu       | 0.15    |
 
-Accuracy: [0.4457437992095947, 0.8534042835235596]
+last epoch
+loss: 0.4166 - accuracy: 0.8502 - val_loss: 0.4541 - val_accuracy: 0.8502
+
+Accuracy: [0.44653087854385376, 0.8504787087440491]
