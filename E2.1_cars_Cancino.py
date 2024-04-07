@@ -42,12 +42,9 @@ def main():
 
     op = ' ' 
     while op != '0':
-        folders = listar_carpetas("images")
-        test_example = input("Seleccione un folder: ")
-
         menu()
-        
         op = input('Select the player: ')
+        
         player = ""
 
         if op == '0':
@@ -60,6 +57,10 @@ def main():
         elif op == '2':
             models = listar_elementos("models/cancino")
             player = 'cancino'
+        
+        
+        folders = listar_carpetas("images")
+        test_example = input("Seleccione un folder: ")
         
         model_selection = input("Select a model: ")
 
