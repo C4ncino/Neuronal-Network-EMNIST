@@ -4,6 +4,7 @@ from matplotlib import pyplot as plt
 import numpy as np
 import seaborn as sns
 import pandas as pd
+from models import path, player
 from models import model_jp, model_cancino, epochs_jp, epochs_cancino
 from class_mapping import classes
 
@@ -63,7 +64,13 @@ def train(x_train: pd.DataFrame, y_train: pd.Series, x_test: pd.DataFrame, y_tes
     )
 
     print("Training...")
-    model_history = model.fit(x_train, y_train, epochs=epochs, validation_data=(x_test, y_test))
+    model_history = model.fit(
+        x_train, 
+        y_train, 
+        epochs=epochs, 
+        batch_size=128,
+        validation_data=(x_test, y_test)
+    )
 
     plt.plot(model_history.history['loss'])
     plt.plot(model_history.history['val_loss'])
@@ -158,4 +165,4 @@ def main(model_path: str, player: str) -> None:
 
 
 if __name__ == '__main__':
-    main('models/juanpablo/v1', 'juanpablo')
+    main(path, player)

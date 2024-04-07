@@ -1,22 +1,21 @@
 import tensorflow as tf
 
+path = 'models/cancino/v5'
+
+player = 'cancino'
+
 #? -----------------------------------------------------------------------------
 #? Cancino's Config 
 #? -----------------------------------------------------------------------------
 
-epochs_cancino = 8
+epochs_cancino = 15
 
 model_cancino = tf.keras.Sequential([
     tf.keras.layers.Input(shape=(784,)),
-    tf.keras.layers.Dense(units = 400, activation="relu"),
-    tf.keras.layers.Dropout(0.3),
-    tf.keras.layers.Dense(units = 250, activation="relu"),
-    tf.keras.layers.Dropout(0.2),
-    tf.keras.layers.Dense(units = 200, activation="relu"),
-    tf.keras.layers.Dropout(0.2),
-    tf.keras.layers.Dense(units = 100, activation="relu"),
-    tf.keras.layers.Dropout(0.1),
-    tf.keras.layers.Dense(units = 100, activation="relu"),
+    tf.keras.layers.Dense(180, activation='relu'),
+    tf.keras.layers.Dropout(0.15),
+    tf.keras.layers.Dense(180, activation='relu'),
+    tf.keras.layers.Dropout(0.15),
     tf.keras.layers.Dense(units = 47, activation="softmax"),
 ])
 
