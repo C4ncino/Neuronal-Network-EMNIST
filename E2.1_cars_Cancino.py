@@ -59,13 +59,15 @@ def main():
         
         models = listar_elementos(f"models/{player}")
 
+        model_selection = input("Select a model: ")
+
+        print()
+
         folders = listar_carpetas("images")
         
         test_example = input("Seleccione un folder: ")
-        
-        model_selection = input("Select a model: ")
 
-        tf_model = tf.keras.models.load_model(f"models/{player}/{models[int(model_selection)]}.h5")
+        tf_model = tf.keras.models.load_model(f"models/{player}/{models[int(model_selection)]}")
 
         original_image = cv2.imread(f"images/{folders[int(test_example)]}.png", 0)
         
