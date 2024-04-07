@@ -52,8 +52,8 @@ def main():
             break
 
         elif op == '1':
-            models = listar_carpetas("models/jp")
-            player = 'jp'
+            models = listar_carpetas("models/juanpablo")
+            player = 'juanpablo'
 
         elif op == '2':
             models = listar_carpetas("models/cancino")
@@ -61,9 +61,9 @@ def main():
         
         model_selection = input("Select a model: ")
 
-        tf_model = tf.keras.models.load_model(f"models/{player}/{models[int(model_selection)]}")
+        tf_model = tf.keras.models.load_model(f"models/{player}/{models[int(model_selection)]}.h5")
 
-        original_image = cv2.imread(f"images/{folders[int(test_example)]}.jpg", 0)
+        original_image = cv2.imread(f"images/{folders[int(test_example)]}.png", 0)
         
         cv2.imshow('image', original_image)
 

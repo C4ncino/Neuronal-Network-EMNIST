@@ -53,6 +53,7 @@ loss: 0.4210 - accuracy: 0.8511 - val_loss:
 
 Accuracy: [0.4380095899105072, 0.8531383275985718]
 
+![Graphic_v1](./documentation/cancino/1.png)
 
 ### v2
 
@@ -70,6 +71,7 @@ loss: 0.3625 - accuracy: 0.8662 - val_loss: 0.4385 - val_accuracy: 0.8554
 
 Accuracy: [0.4385177493095398, 0.8554255366325378]
 
+![Graphic_v2](./documentation/cancino/2.png)
 
 ### v3
 
@@ -87,6 +89,7 @@ loss: 0.4092 - accuracy: 0.8553 - val_loss: 0.4442 - val_accuracy: 0.8521
 
 Accuracy: [0.444208562374115, 0.8521276712417603]
 
+![Graphic_v3](./documentation/cancino/3.png)
 
 ### v4
 
@@ -102,6 +105,7 @@ loss: 0.4565 - accuracy: 0.8400 - val_loss: 0.4426 - val_accuracy: 0.8502
 
 Accuracy: [0.4425795376300812, 0.8501595854759216]
 
+![Graphic_v4](./documentation/cancino/4.png)
 
 ### v5
 
@@ -118,6 +122,7 @@ loss: 0.4237 - accuracy: 0.8493 - val_loss:
 
 Accuracy: [0.4466071128845215, 0.8521276712417603]
 
+![Graphic_v5](./documentation/cancino/5.png)
 
 #### v5.1
 
@@ -126,12 +131,13 @@ loss: 0.4124 - accuracy: 0.8524 - val_loss:
 
 Accuracy: [0.4454222023487091, 0.852393627166748]
 
-
+![Graphic_v5.1](./documentation/cancino/5.1.png)
 
 ## Historial de versiones juan pablo
 
 ### v1
-### Loss: 0.4883 Accurracy: 0.8445
+
+Epochs: 10
 
 | Type  | Units | Activation | Dropout |
 | ----- | ----- | ---------- | ------- |
@@ -141,10 +147,13 @@ Accuracy: [0.4454222023487091, 0.852393627166748]
 | Dense | 256   | relu       | 0.1     |
 | Dense |  64   | relu       | N/A     |
 
-![Graphic_v1]("images/Graphics/JuanPablo/Graphic_v1.png")
+Accuracy: [0.4883, 0.8445]
+
+![Graphic_v1](./documentation/juanpablo/Graphic_v1.png)
 
 ### v2
-### Loss: 0.4984 Accurracy: 0.8353
+
+Epochs: 10
 
 | Type  | Units | Activation | Dropout |
 | ----- | ----- | ---------- | ------- |
@@ -154,10 +163,13 @@ Accuracy: [0.4454222023487091, 0.852393627166748]
 | Dense |  64   | relu       | 0.1     |
 | Dense |  32   | relu       | N/A     |
 
-![Graphic_v2]("images/Graphics/JuanPablo/Graphic_v2.png")
+Accuracy: [0.4984, 0.8353]
+
+![Graphic_v2](./documentation/juanpablo/Graphic_v2.png)
 
 ### v3
-### Loss: 0.4896 Accurracy: 0.8393
+
+Epochs: 10
 
 | Type  | Units | Activation | Dropout |
 | ----- | ----- | ---------- | ------- |
@@ -167,12 +179,16 @@ Accuracy: [0.4454222023487091, 0.852393627166748]
 | Dense | 128   | relu       | 0.1     |
 | Dense |  32   | relu       | N/A     |
 
-![Graphic_v3]("images/Graphics/JuanPablo/Graphic_v3.png")
+Accuracy: [0.4896, 0.8393]
+
+![Graphic_v3](./documentation/juanpablo/Graphic_v3.png)
 
 
 ## Pruebas
 
+Modelo juanpablo v1
 
+![Prueba1](./documentation/juanpablo/prueba1.png)
 
 
 ## Procesamiento de imagen
@@ -190,6 +206,20 @@ Obtener los caracteres de una placa en una imagen de un vehículo en un formato 
 - Se guardan todas las nuevas imágenes de los caracteres en sus carpetas correspondientes.
 
 ### Ejemplos
+
+Imagen original
+
+![Coche1](./images/coche.jpg)
+
+Caracteres
+
+![Caracter1](./images/coche/0.jpg)
+![Caracter1](./images/coche/1.jpg)
+![Caracter1](./images/coche/2.jpg)
+![Caracter1](./images/coche/3.jpg)
+![Caracter1](./images/coche/4.jpg)
+![Caracter1](./images/coche/5.jpg)
+
 #### Json
 
 ```json
