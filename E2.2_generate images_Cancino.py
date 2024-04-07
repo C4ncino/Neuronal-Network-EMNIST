@@ -4,6 +4,19 @@ import cv2
 import json
 import os
 
+def listar_elementos(directorio):
+    if not os.path.exists(directorio):
+        print(f"El directorio '{directorio}' no existe.")
+        return
+        
+    elementos = [nombre for nombre in os.listdir(directorio) if not os.path.isdir(os.path.join(directorio, nombre))]
+
+    print("\nElementos en el directorio:")
+    for i in range(len(elementos)): 
+        print(f"{i}: {elementos[i]}")
+
+    return elementos
+
 def get_images(data, destiny_folder_name):
     
     image = cv2.imread(data['path'], 0)
@@ -47,7 +60,7 @@ def get_images(data, destiny_folder_name):
         cv2.imwrite(f"images/{destiny_folder_name}/{str(i)}.jpg", canvas28)
 
 def menu():
-    print('1. Show with matplotlib')
+    print('\n1. Show with matplotlib')
     print('2. Get Images from JSON')
     print('0. Exit')
 
@@ -59,9 +72,11 @@ def main():
         op = input('Enter an option: ')
         
         if op == '1':
-            file_name = input("Enter the name of the image: ")  
+            elements = listar_elementos('images')
+
+            f_i = input("Select an image: ")  
             
-            image = cv2.imread(f"images/{file_name}", 0)
+            image = cv2.imread(f"images/{elements[int(f_i)]}", 0)
             
             plt.imshow(image, cmap='gray')
             plt.show()
