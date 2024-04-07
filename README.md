@@ -17,7 +17,7 @@
 ## Historial de versiones juan pablo
 
 ### v1
-### Loss: 0.5049 Accurracy: 0.8349
+### Loss: 0.4925 Accurracy: 0.8388
 
 | Type  | Units | Activation | Dropout |
 | ----- | ----- | ---------- | ------- |
@@ -28,7 +28,7 @@
 | Dense |  64   | relu       | N/A     |
 
 ### v2
-### Loss: 0.4961 Accurracy: 0.8383
+### Loss: 0.5056 Accurracy: 0.8393
 
 | Type  | Units | Activation | Dropout |
 | ----- | ----- | ---------- | ------- |
@@ -39,7 +39,7 @@
 | Dense |  32   | relu       | N/A     |
 
 ### v3
-### Loss: 0.4903 Accurracy: 0.8423
+### Loss: 0.4887 Accurracy: 0.8422
 
 | Type  | Units | Activation | Dropout |
 | ----- | ----- | ---------- | ------- |
