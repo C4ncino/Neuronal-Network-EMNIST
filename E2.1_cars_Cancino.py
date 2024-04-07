@@ -69,7 +69,7 @@ def main():
 
         tf_model = tf.keras.models.load_model(f"models/{player}/{models[int(model_selection)]}")
 
-        original_image = cv2.imread(f"images/{folders[int(test_example)]}.png", 0)
+        original_image = cv2.imread(f"images/{folders[int(test_example)]}.jpg", 0)
         
         cv2.imshow('image', original_image)
 
