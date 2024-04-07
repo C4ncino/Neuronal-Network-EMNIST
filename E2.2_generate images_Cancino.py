@@ -1,3 +1,4 @@
+import random
 import numpy as np
 import matplotlib.pyplot as plt
 import cv2
@@ -39,6 +40,7 @@ def get_images(data, destiny_folder_name):
         end_y = start_y + images_letters[i].shape[0]
         canvas[start_y:end_y, start_x:end_x] = images_letters[i]
         
+        # ----------------------------------------------------------------------
         # Recorrer la imagen y todo aquel pixel que supere el valor 100, 
         # se pasara a blanco para poder invertir los colores y mandarlo al modelo
         for j in range(len(canvas)):
@@ -48,16 +50,38 @@ def get_images(data, destiny_folder_name):
                 else:
                     canvas[j][k] = 255
 
+
         canvasResized = cv2.resize(canvas, (28, 28))
 
         canvas28 = canvasResized.reshape(-1, 28)
+
+        # Prueba rotando la imagen -------------------------------------------------
+        altura, anchura = canvas28.shape[:2]
         
+        angulo_rotacion = random.randint(25, 271)
+
+        centro = (anchura // 2, altura // 2)
+
+        matriz_rotacion = cv2.getRotationMatrix2D(centro, angulo_rotacion, 1.0)
+
+        imagen_rotada = cv2.warpAffine(canvas28, matriz_rotacion, (anchura, altura))
+        # --------------------------------------------------------------------------
+
         # plt.imshow(canvas28, cmap='gray')
         # plt.show()
 
         os.makedirs(f"images/{destiny_folder_name}", exist_ok=True)
+        
+        cv2.imwrite(f"images/{destiny_folder_name}/{str(i)}.jpg", imagen_rotada)
 
-        cv2.imwrite(f"images/{destiny_folder_name}/{str(i)}.jpg", canvas28)
+def check_color(pixel):
+
+    if pixel <71:
+        return 'n'
+    elif pixel < 101:
+        return 'g'
+    else:
+        return 'b'
 
 def menu():
     print('\n1. Show with matplotlib')

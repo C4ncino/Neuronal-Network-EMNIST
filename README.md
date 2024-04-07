@@ -186,6 +186,16 @@ Accuracy: [0.4896, 0.8393]
 
 ## Pruebas
 
+Se probaron dos formas distintas.
+1.  Se tomó cada caracter en color blanco y el resto en color negro.
+2. A esa primera forma se le hizo una rotación aleatoria entre 25 a 270 grados.
+
+Modelo cancino v5.1
+
+![Prueba1](./documentation/cancino/prueba1.png)
+
+![Prueba2](./documentation/cancino/prueba2.png)
+
 Modelo juanpablo v1
 
 ![Prueba1](./documentation/juanpablo/prueba1.png)
@@ -224,31 +234,68 @@ Caracteres
 
 ```json
     {
-        "path": "imagenes/coche.jpg",
+        "path": "<directory/image.png>",
+        "name": "<name>",
         "caracteres": [
             {
-                "x": [320, 440],
-                "y": [180, 480]
+                "x": [
+                    <x0>,
+                    <x1>
+                ],
+                "y": [
+                    <y0>,
+                    <y1>
+                ]
             },
             {
-                "x": [440, 580],
-                "y": [180, 480]
+                "x": [
+                    <x0>,
+                    <x1>
+                ],
+                "y": [
+                    <y0>,
+                    <y1>
+                ]
             },
             {
-                "x": [580, 700],
-                "y": [180, 480]
+                "x": [
+                    <x0>,
+                    <x1>
+                ],
+                "y": [
+                    <y0>,
+                    <y1>
+                ]
             },
             {
-                "x": [700, 840],
-                "y": [180, 480]
+                "x": [
+                    <x0>,
+                    <x1>
+                ],
+                "y": [
+                    <y0>,
+                    <y1>
+                ]
             },
             {
-                "x": [880, 1030],
-                "y": [180, 480]
+                "x": [
+                    <x0>,
+                    <x1>
+                ],
+                "y": [
+                    <y0>,
+                    <y1>
+                ]
             },
             {
-                "x": [1030, 1160],
-                "y": [180, 480]
+                "x": [
+                    <x0>,
+                    <x1>
+                ],
+                "y": [
+                    <y0>,
+                    <y1>
+                ]
             }
         ]
     }
