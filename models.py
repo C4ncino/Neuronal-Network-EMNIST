@@ -1,6 +1,6 @@
 import tensorflow as tf
 
-path = 'models/cancino/v4'
+path = 'models/cancino/v5'
 
 player = 'cancino'
 

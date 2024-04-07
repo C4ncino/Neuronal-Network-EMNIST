@@ -4,7 +4,7 @@
 
 ### v1
 
-Epochs: 8
+Epochs: 15
 
 | Type  | Units | Activation | Dropout |
 | ----- | ----- | ---------- | ------- |
@@ -13,6 +13,14 @@ Epochs: 8
 | Dense | 200   | relu       | 0.2     |
 | Dense | 100   | relu       | 0.1     |
 | Dense | 100   | relu       | N/A     |
+
+last epoch
+
+loss: 0.4210 - accuracy: 0.8511 - val_loss: 
+0.4380 - val_accuracy: 0.8531
+
+Accuracy: [0.4380095899105072, 0.8531383275985718]
+
 
 ### v2
 
@@ -24,7 +32,11 @@ Epochs: 8
 | Dense | 800   | relu       | 0.2     |
 | Dense | 250   | relu       | 0.15    |
 
-Accuracy: [0.5104601979255676, 0.8399999737739563]
+last epoch 
+
+loss: 0.3625 - accuracy: 0.8662 - val_loss: 0.4385 - val_accuracy: 0.8554
+
+Accuracy: [0.4385177493095398, 0.8554255366325378]
 
 ### v3
 
@@ -36,8 +48,11 @@ Epochs: 5
 | Dense | 256   | relu       | 0.3     |
 | Dense | 128   | relu       | 0.1     |
 
-Accuracy: [0.4940672814846039, 0.8395744562149048]
+last epoch
 
+loss: 0.4092 - accuracy: 0.8553 - val_loss: 0.4442 - val_accuracy: 0.8521
+
+Accuracy: [0.444208562374115, 0.8521276712417603]
 
 ### v4
 
@@ -64,6 +79,15 @@ Epochs: 15
 | Dense | 180   | relu       | 0.15    |
 
 last epoch
-loss: 0.4166 - accuracy: 0.8502 - val_loss: 0.4541 - val_accuracy: 0.8502
+loss: 0.4237 - accuracy: 0.8493 - val_loss: 
+0.4466 - val_accuracy: 0.8521
 
-Accuracy: [0.44653087854385376, 0.8504787087440491]
+Accuracy: [0.4466071128845215, 0.8521276712417603]
+
+
+#### v5.1
+
+loss: 0.4124 - accuracy: 0.8524 - val_loss: 
+0.4454 - val_accuracy: 0.8524
+
+Accuracy: [0.4454222023487091, 0.852393627166748]
