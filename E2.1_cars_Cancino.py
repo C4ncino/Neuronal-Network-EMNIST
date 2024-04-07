@@ -51,22 +51,23 @@ def main():
             break
 
         elif op == '1':
-            models = listar_elementos("models/jp")
-            player = 'jp'
+            player = 'juanpablo'
 
         elif op == '2':
-            models = listar_elementos("models/cancino")
             player = 'cancino'
         
         
+        models = listar_elementos(f"models/{player}")
+
         folders = listar_carpetas("images")
+        
         test_example = input("Seleccione un folder: ")
         
         model_selection = input("Select a model: ")
 
-        tf_model = tf.keras.models.load_model(f"models/{player}/{models[int(model_selection)]}")
+        tf_model = tf.keras.models.load_model(f"models/{player}/{models[int(model_selection)]}.h5")
 
-        original_image = cv2.imread(f"images/{folders[int(test_example)]}.jpg", 0)
+        original_image = cv2.imread(f"images/{folders[int(test_example)]}.png", 0)
         
         cv2.imshow('image', original_image)
 
