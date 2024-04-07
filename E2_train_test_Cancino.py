@@ -78,7 +78,7 @@ def train(x_train: pd.DataFrame, y_train: pd.Series, x_test: pd.DataFrame, y_tes
     plt.ylabel('Loss')
     plt.show()
 
-    model.save(model_path)
+    model.save(f'{model_path}.h5')
 
     return model
 
@@ -158,7 +158,7 @@ def main(model_path: str, player: str) -> None:
                 model = train(x_train, y_train, x_test, y_test, model_path, player)
 
             else:
-                model = tf.keras.models.load_model(model_path)
+                model = tf.keras.models.load_model(f"{model_path}.h5")
             
             if op != '2':
                 test(model, x_test, y_test)
