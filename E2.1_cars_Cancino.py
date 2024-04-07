@@ -18,16 +18,18 @@ def listar_carpetas(directorio):
     
     return carpetas
 
-def contar_elementos(directorio):
+def listar_elementos(directorio):
     if not os.path.exists(directorio):
         print(f"El directorio '{directorio}' no existe.")
         return
     
     elementos = os.listdir(directorio)
-    
-    total_elementos = len(elementos)
 
-    return total_elementos
+    print("\nElementos en el directorio:")
+    for i in range(len(elementos)): 
+        print(f"{i}: {elementos[i]}")
+
+    return elementos
 
 def menu():
     print("\n1. JP's models")
@@ -52,11 +54,11 @@ def main():
             break
 
         elif op == '1':
-            models = listar_carpetas("models/jp")
+            models = listar_elementos("models/jp")
             player = 'jp'
 
         elif op == '2':
-            models = listar_carpetas("models/cancino")
+            models = listar_elementos("models/cancino")
             player = 'cancino'
         
         model_selection = input("Select a model: ")
@@ -67,7 +69,7 @@ def main():
         
         cv2.imshow('image', original_image)
 
-        n_items = contar_elementos(f"images/{folders[int(test_example)]}")
+        n_items = len(listar_elementos(f"images/{folders[int(test_example)]}"))
 
         items = []
 
