@@ -43,6 +43,22 @@ Todas las librerías se pueden descargar mediante el archivo `requirements.txt`
 
 El dataset que se utiliza es el de EMNIST dividido en 2 archivos .csv. El primero para entrenamiento y el segundo para pruebas, donde se encuentran las diferentes clases con la matriz de valores de 0 a 255 en escala de grises representando la escritura de las letras y números. Para su uso con los scripts se deben encontrar en la carpeta `data` bajo los nombres de `train.csv` y `test.csv`
 
+Para el entrenamiento de los modelos se eliminarán todos aquellos valores que sean letras minúsculas (a, b, d, e, f, g, h, n, q, r, t) ya que al estar dirigido a reconocimiento de caracteres de Placas de coches, solo se requieren las letras mayúsculas, evitando mayor confusión en el entrenamiento.
+
+# Mapping
+
+```json
+    classes = {
+    0: '0', 1: '1', 2: '2', 3: '3', 4: '4', 5: '5', 6: '6',
+    7: '7', 8: '8', 9: '9', 10: 'A', 11: 'B', 12: 'C',
+    13: 'D', 14: 'E', 15: 'F', 16: 'G', 17: 'H', 18: 'I',
+    19: 'J', 20: 'K', 21: 'L', 22: 'M', 23: 'N', 24: 'O',
+    25: 'P', 26: 'Q', 27: 'R', 28: 'S', 29: 'T', 30: 'U',
+    31: 'V', 32: 'W', 33: 'X', 34: 'Y', 35: 'Z'
+}
+```
+
+
 ## Modelos
 
 Cada integrante entrenó un modelo diferente en busca de la mejor arquitectura. A continuación se muestran los resultados de cada uno de los modelos con el numero de épocas de entrenamiento y sus respectivas arquitecturas y sus resultados con el dataset de prueba. 
@@ -275,10 +291,12 @@ Se probaron dos formas distintas.
 
 ![Prueba1](./documentation/cancino/prueba1.png)
 ![Prueba2](./documentation/cancino/prueba2.png)
+![Prueba3](./documentation/cancino/prueba3.png)
 
-### Modelo Juan Pablo v1
+Modelo juanpablo v1
 
 ![Prueba1](./documentation/juanpablo/prueba1.png)
+![Prueba2](./documentation/juanpablo/prueba2.png)
 
 
 ## Procesamiento de imagen

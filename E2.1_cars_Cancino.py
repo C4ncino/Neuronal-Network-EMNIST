@@ -77,8 +77,9 @@ def main():
 
         items = []
 
-        for i in range(n_items):
+        for i in range(n_items//2):
             items.append(cv2.imread(f"images/{folders[int(test_example)]}/{i}.jpg", 0))
+            items.append(cv2.imread(f"images/{folders[int(test_example)]}/{i}_R.jpg", 0))
 
 
         for item in items:

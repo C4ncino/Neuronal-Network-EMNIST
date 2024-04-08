@@ -72,7 +72,8 @@ def get_images(data, destiny_folder_name):
 
         os.makedirs(f"images/{destiny_folder_name}", exist_ok=True)
         
-        cv2.imwrite(f"images/{destiny_folder_name}/{str(i)}.jpg", imagen_rotada)
+        cv2.imwrite(f"images/{destiny_folder_name}/{str(i)}.jpg", canvas28)
+        cv2.imwrite(f"images/{destiny_folder_name}/{str(i)}_R.jpg", imagen_rotada)
 
 def check_color(pixel):
 
