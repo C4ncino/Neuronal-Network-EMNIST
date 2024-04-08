@@ -196,9 +196,13 @@ Modelo cancino v5.1
 
 ![Prueba2](./documentation/cancino/prueba2.png)
 
+![Prueba3](./documentation/cancino/prueba3.png)
+
 Modelo juanpablo v1
 
 ![Prueba1](./documentation/juanpablo/prueba1.png)
+
+![Prueba2](./documentation/juanpablo/prueba2.png)
 
 
 ## Procesamiento de imagen
