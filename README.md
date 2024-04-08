@@ -447,9 +447,9 @@ Por último, la manera en que se le otorgan las imágenes de las placas es de su
 - Instalar todas las dependencias.
 
 ```bash
-    git clone https://github.com/C4ncino/Neuronal-Network-EMNIST.git
-	
-    cd Neuronal-Network-EMNIST
-    
-	pip install -r requirements.txt
+git clone https://github.com/C4ncino/Neuronal-Network-EMNIST.git
+
+cd Neuronal-Network-EMNIST
+
+pip install -r requirements.txt
 ```
