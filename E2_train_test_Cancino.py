@@ -147,6 +147,10 @@ def main(model_path: str, player: str) -> None:
     """
 
     op = ' ' 
+    x_test = None
+    y_test = None
+    x_train = None
+    y_train = None
 
     while op != '0':
         menu()
@@ -154,10 +158,14 @@ def main(model_path: str, player: str) -> None:
         op = input('Enter an option: ')
         
         if op == '1' or op == '2' or op == '3':
-            x_test, y_test = load_dataset('data/test.csv')
+
+            if x_test == None or y_test == None:
+                x_test, y_test = load_dataset('data/test.csv')
 
             if op == '1' or op == '2':
-                x_train, y_train = load_dataset('data/train.csv')
+                
+                if x_train == None or y_train == None:
+                    x_train, y_train = load_dataset('data/train.csv')
 
                 model = train(x_train, y_train, x_test, y_test, model_path, player)
 

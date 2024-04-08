@@ -71,8 +71,8 @@ En este caso se realizaron las pruebas de 5 modelos diferentes, los cuales se mu
 
 | Etapa | Pérdida | Precisión |
 | :---: | :-----: | :-------: |
-| Train | 0.4210  |  85.11%   |
-| Test  | 0.4380  |  85.31%   |
+| Train | 0.3448  |  87.68%   |
+| Test  | 0.3321  |  88.73%   |
 
 
 **Gráfica de desempeño**
@@ -97,8 +97,8 @@ En este caso se realizaron las pruebas de 5 modelos diferentes, los cuales se mu
 
 | Etapa | Pérdida | Precisión |
 | :---: | :-----: | :-------: |
-| Train | 0.3625  |  86.62%   |
-| Test  | 0.4385  |  85.54%   |
+| Train | 0.2645  |  89.86%   |
+| Test  | 0.3249  |  89.28%   |
 
 **Gráfico de Desempeño**
 
@@ -122,8 +122,8 @@ En este caso se realizaron las pruebas de 5 modelos diferentes, los cuales se mu
 
 | Etapa | Pérdida | Precisión |
 | :---: | :-----: | :-------: |
-| Train | 0.4092  |  85.53%   |
-| Test  | 0.4442  |  85.21%   |
+| Train | 0.2985  |  88.94%   |
+| Test  | 0.3496  |  87.74%   |
 
 **Gráfico de Desempeño**
 
@@ -133,7 +133,7 @@ En este caso se realizaron las pruebas de 5 modelos diferentes, los cuales se mu
 
 #### v4
 
-**Epochs**: `1`
+**Epochs**: `15`
 
 
 **Arquitectura del Modelo**
@@ -147,8 +147,8 @@ En este caso se realizaron las pruebas de 5 modelos diferentes, los cuales se mu
 
 | Etapa | Pérdida | Precisión |
 | :---: | :-----: | :-------: |
-| Train | 0.4565  |  84.00%   |
-| Test  | 0.4426  |  85.02%   |
+| Train | 0.2825  |  89.33%   |
+| Test  | 0.3283  |  88.83%   |
 
 **Gráfico de Desempeño**
 
@@ -158,7 +158,7 @@ En este caso se realizaron las pruebas de 5 modelos diferentes, los cuales se mu
 
 #### v5
 
-**Epochs**: `1`
+**Epochs**: `15`
 
 
 **Arquitectura del Modelo**
@@ -172,21 +172,12 @@ En este caso se realizaron las pruebas de 5 modelos diferentes, los cuales se mu
 
 | Etapa | Pérdida | Precisión |
 | :---: | :-----: | :-------: |
-| Train | 0.4237  |  84.93%   |
-| Test  | 0.4466  |  85.21%   |
+| Train | 0.2922  |  88.86%   |
+| Test  | 0.3352  |  88.65%   |
 
 **Gráfico de Desempeño**
 
 ![](./documentation/cancino/5.png)
-
-#### v5.1
-
-**Resultados de la Red Neuronal**
-
-| Etapa | Pérdida | Precisión |
-| :---: | :-----: | :-------: |
-| Train | 0.4124  |  85.24%   |
-| Test  | 0.4454  |  85.24%   |
 
 **Gráfico de Desempeño**
 
@@ -210,10 +201,10 @@ En este caso se realizaron las pruebas de 5 modelos diferentes, los cuales se mu
 
 **Resultados de la Red Neuronal**
 
-| Etapa |  Pérdida  | Precisión |
-| :---: | :-------: | :-------: |
-| Train | Sin datos | Sin datos |
-| Test  |  0.4883   |  84.45%   |
+| Etapa | Pérdida | Precisión |
+| :---: | :-----: | :-------: |
+| Train | 0.3145  |  88.59%   |
+| Test  | 0.3337  |  88.26%   |
 
 **Gráfico de Desempeño**
 
@@ -237,10 +228,10 @@ En este caso se realizaron las pruebas de 5 modelos diferentes, los cuales se mu
 
 **Resultados de la Red Neuronal**
 
-| Etapa |  Pérdida  | Precisión |
-| :---: | :-------: | :-------: |
-| Train | Sin datos | Sin datos |
-| Test  |  0.4984   |  83.53%   |
+| Etapa | Pérdida | Precisión |
+| :---: | :-----: | :-------: |
+| Train | 0.3232  |  88.42%   |
+| Test  | 0.3275  |  88.90%   |
 
 **Gráfico de Desempeño**
 
@@ -264,10 +255,10 @@ En este caso se realizaron las pruebas de 5 modelos diferentes, los cuales se mu
 
 **Resultados de la Red Neuronal**
 
-| Etapa |  Pérdida  | Precisión |
-| :---: | :-------: | :-------: |
-| Train | Sin datos | Sin datos |
-| Test  |  0.4896   |  83.93%   |
+| Etapa | Pérdida | Precisión |
+| :---: | :-----: | :-------: |
+| Train | 0.3268  |  88.26%   |
+| Test  | 0.3404  |  88.61%   |
 
 **Gráfico de Desempeño**
 
