@@ -9,7 +9,7 @@
 En este trabajo se describe la creación y entrenamiento de un modelo de red neuronal buscando y comparando la mejor arquitectura para esta, todos los modelos tiene la siguiente arquitectura base: 
   - Una capa de entrada con 784 neuronas para que cada una pues recibir un pixel de la imagen de 28x28, 
   - Una combinación de capas ocultas 
-  - La capa de salida de 47 neuronas para ubicar la clase a la que pertenece que varían entre números y letras. 
+  - La capa de salida de 36 neuronas para ubicar la clase a la que pertenece que varían entre números y letras. 
 
 Al finalizar del entrenamiento, se analizaron los resultados comparando entre las dos propuestas y las métricas de precisión para utilizar el modelo mejor entrenado. 
 
@@ -43,9 +43,9 @@ Todas las librerías se pueden descargar mediante el archivo `requirements.txt`
 
 El dataset que se utiliza es el de EMNIST dividido en 2 archivos .csv. El primero para entrenamiento y el segundo para pruebas, donde se encuentran las diferentes clases con la matriz de valores de 0 a 255 en escala de grises representando la escritura de las letras y números. Para su uso con los scripts se deben encontrar en la carpeta `data` bajo los nombres de `train.csv` y `test.csv`
 
-Para el entrenamiento de los modelos se eliminarán todos aquellos valores que sean letras minúsculas (a, b, d, e, f, g, h, n, q, r, t) ya que al estar dirigido a reconocimiento de caracteres de Placas de coches, solo se requieren las letras mayúsculas, evitando mayor confusión en el entrenamiento.
+Para el entrenamiento de los modelos se eliminaron aquellos valores que sean letras minúsculas (a, b, d, e, f, g, h, n, q, r, t) ya que al estar dirigido a reconocimiento de caracteres de Placas de coches, solo se requieren las letras mayúsculas, evitando mayor confusión en el entrenamiento.
 
-# Mapping
+## Mapping
 
 ```python
 classes = {
@@ -57,7 +57,6 @@ classes = {
     31: 'V', 32: 'W', 33: 'X', 34: 'Y', 35: 'Z'
 }
 ```
-
 
 ## Modelos
 
@@ -332,7 +331,16 @@ Obtener los caracteres de una placa en una imagen de un vehículo en un formato 
 ![](./images/coche4/5.jpg)
 ![](./images/coche4/6.jpg)
 
-#### Json
+
+![](./images/coche4/0_R.jpg)
+![](./images/coche4/1_R.jpg)
+![](./images/coche4/2_R.jpg)
+![](./images/coche4/3_R.jpg)
+![](./images/coche4/4_R.jpg)
+![](./images/coche4/5_R.jpg)
+![](./images/coche4/6_R.jpg)
+
+### Json
 
 ```json
     {
@@ -373,6 +381,15 @@ Obtener los caracteres de una placa en una imagen de un vehículo en un formato 
     }
 ```
 
+## Conclusiones
+
+En cuanto al dataset el entrenamiento se ve afectado por la cantidad de clases que se generan, provocando mayor confusion al tomar en cuenta clases que no se utilizan, siendo ejemplo las letras minúsculas, ademas el hecho de que están rotadas, volteadas, etc, provoca que los patrones cambien y sea complicado la identificación de los caracteres puestos correctamente.
+
+Por otro lado, las arquitecturas podemos decir que las que se probaron con un mayor numero de neuronas en sus capas llegaron a un sobre-entrenamiento más rápido que las demás, no obstante uno de estos fue el que aparentemente mejor resultados obtuvo. Los demás modelos que se construyeron tardaron más en entrenar y tuvieron una mejor relación entre su perdida de entrenamiento y la de validación.
+
+Por último, la manera en que se le otorgan las imágenes de las placas es de suma importancia, ya que de esto depende que el modelo sea capaz de identificarlas. Por ejemplo importa que tan grande se vea el carácter o la posible rotación que tenga.  
+
+
 ## Estructura
 
 ```plane
@@ -383,15 +400,18 @@ Obtener los caracteres de una placa en una imagen de un vehículo en un formato 
 │   ├──📁/juanpablo       
 │   │   ├──🖼️[imágenes de gráficas]
 │   │   └──🖼️[imágenes de pruebas]
+│
 ├──📁/images                 
 │   ├──📁/[carpeta de cada coche]
 │   │   └──🖼️[imágenes de los caracteres]
 │   └──🖼️[fotos de coches]
+│
 ├──📁/models                 
 │   ├──📁/cancino          
 │   │   └──📄[versiones de modelos de IA entrenados]
 │   └──📁/juanpablo        
 │       └──📄[versiones de modelos de IA entrenados]
+│
 ├──🐍class_mapping.py
 ├──📝coches.json
 ├──🐍E2_train_test_Cancino.py

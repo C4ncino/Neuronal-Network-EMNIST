@@ -38,7 +38,6 @@ def menu():
 
 
 def main():
-    
 
     op = ' ' 
     while op != '0':
