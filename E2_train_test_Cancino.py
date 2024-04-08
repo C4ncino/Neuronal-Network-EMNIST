@@ -22,6 +22,10 @@ def load_dataset(path: str) -> tuple[pd.DataFrame, pd.Series]:
 
     train_dataset = pd.read_csv(path, header=None)
 
+    keys_lower_case = [key for key, value in classes.items() if value.islower()]
+
+    train_dataset = train_dataset.drop(train_dataset[train_dataset[0].isin(keys_lower_case)].index)
+
     x = train_dataset.drop(columns=0)
     y = train_dataset[0]
 

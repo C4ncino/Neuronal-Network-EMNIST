@@ -1,16 +1,23 @@
 {
     "cSpell.words": [
-        "tensorflow",
+        "adam",
+        "annot",
+        "argmax",
+        "canva",
+        "cmap",
+        "EMNIST",
+        "imshow",
+        "isin",
         "keras",
+        "matplotlib",
+        "Matplotlib",
+        "Numpy",
+        "pyplot",
         "relu",
         "softmax",
         "sparse_categorical_crossentropy",
-        "adam",
+        "tensorflow",
         "xlabel",
-        "ylabel",
-        "argmax",
-        "imshow",
-        "annot",
-        "cmap"
+        "ylabel"
     ]
 }

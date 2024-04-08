@@ -16,7 +16,7 @@ model_cancino = tf.keras.Sequential([
     tf.keras.layers.Dropout(0.15),
     tf.keras.layers.Dense(180, activation='relu'),
     tf.keras.layers.Dropout(0.15),
-    tf.keras.layers.Dense(units = 47, activation="softmax"),
+    tf.keras.layers.Dense(units = 36, activation="softmax"),
 ])
 
 #! -----------------------------------------------------------------------------
