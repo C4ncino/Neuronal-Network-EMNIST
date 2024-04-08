@@ -47,8 +47,8 @@ Para el entrenamiento de los modelos se eliminarán todos aquellos valores que s
 
 # Mapping
 
-```json
-    classes = {
+```python
+classes = {
     0: '0', 1: '1', 2: '2', 3: '3', 4: '4', 5: '5', 6: '6',
     7: '7', 8: '8', 9: '9', 10: 'A', 11: 'B', 12: 'C',
     13: 'D', 14: 'E', 15: 'F', 16: 'G', 17: 'H', 18: 'I',
@@ -372,6 +372,53 @@ Obtener los caracteres de una placa en una imagen de un vehículo en un formato 
         ]
     }
 ```
+
+## Estructura
+
+```plane
+├──📁/documentation          
+│   ├──📁/cancino         
+│   │   ├──🖼️[imágenes de gráficas]
+│   │   └──🖼️[imágenes de pruebas]
+│   ├──📁/juanpablo       
+│   │   ├──🖼️[imágenes de gráficas]
+│   │   └──🖼️[imágenes de pruebas]
+├──📁/images                 
+│   ├──📁/[carpeta de cada coche]
+│   │   └──🖼️[imágenes de los caracteres]
+│   └──🖼️[fotos de coches]
+├──📁/models                 
+│   ├──📁/cancino          
+│   │   └──📄[versiones de modelos de IA entrenados]
+│   └──📁/juanpablo        
+│       └──📄[versiones de modelos de IA entrenados]
+├──🐍class_mapping.py
+├──📝coches.json
+├──🐍E2_train_test_Cancino.py
+├──🐍E2.1_cars_Cancino.py
+├──🐍E2.2_generate images_Cancino.py
+├──🐍models.py
+└──📝requirements.txt
+```
+
+- /documentation: 
+    - Imágenes para documentar el proceso y resultados del entrenamientoy  las pruebas de cada integrante.
+- /images: 
+    - Imágenes originales de los coches y las imágenes de los caracteres obtenidos.
+- /models: 
+    - Modelos guardados por versiones previamente entrenados.
+- class_mapping.py:
+    - Diccionario de las clases resultantes del dataset.
+- coches.json:
+    - Json con la información de las imágenes y sus coordenadas para obtener los caracteres.
+- E2_train_test_Cancino.py:
+    - Código para entrenar y probar los dataset con el modelo indicado.
+- E2.1_cars_Cancino.py:
+    - Código para hacer pruebas de cualquier modelo para una imagen específica, visualizando las predicciones.
+- E2.2_generate images_Cancino.py:
+    - Código para tomar cada imagen de coches y obtener los caracteres, de acuerdo con el json, haciendo el proceso adecuado a la imagen para que esté en el formato adecuado para las pruebas y almacenandolas en carpetas separadas.
+- requirements.txt:
+    - Las dependencias que se utilizarón en el proyecto.
 
 ## Instalación
 
