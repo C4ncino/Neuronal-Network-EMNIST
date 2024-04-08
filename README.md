@@ -450,6 +450,34 @@ Por último, la manera en que se le otorgan las imágenes de las placas es de su
 git clone https://github.com/C4ncino/Neuronal-Network-EMNIST.git
 
 cd Neuronal-Network-EMNIST
+```
 
+En la instalación de dependencias recomendamos tener un entorno virtual en caso de que no desees uno puedes ir directo a la instalación de [dependencias](#dependencies), para crearlo ejecuta lo siguiente:
+
+```bash
+python -m venv venv
+```
+
+La activación del entorno virtual depende de su sistema operativo:
+
+Linux:
+```bash
+source venv/bin/activate
+```
+Windows:
+```bash
+venv\Scripts\activate
+```
+
+Windows con bash:
+```bash
+source venv\Scripts\activate
+```
+
+<span id="dependencies" ></span>
+
+Una vez activado el entorno virtual, se instalan las dependencias:
+
+```bash
 pip install -r requirements.txt
 ```

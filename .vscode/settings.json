@@ -17,6 +17,7 @@
         "softmax",
         "sparse_categorical_crossentropy",
         "tensorflow",
+        "venv",
         "xlabel",
         "ylabel"
     ]
